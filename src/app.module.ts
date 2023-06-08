@@ -8,7 +8,7 @@ import { NotificationController } from './notification/notification.controller';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://netninja:test1234@cluster0.ippr9eh.mongodb.net/?retryWrites=true&w=majority', {dbName: 'briohr_crud'}),
+    MongooseModule.forRoot('mongodb+srv://netninja:[password]@cluster0.ippr9eh.mongodb.net/?retryWrites=true&w=majority', {dbName: 'briohr_crud'}),
     MongooseModule.forFeature([{name: Notification.name, schema: NotificationSchema}])
   ],
   controllers: [AppController, NotificationController],
